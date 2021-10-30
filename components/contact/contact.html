@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <img class="image" src="../../images/ti_logo.png" alt="Turning Ideas">
+        </div>
+        
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../index.html" class="active">Home</a>
+            <a href="../startups/startups.html">Startups</a>
+            <a href="../enterprise/enterprise.html">Enterprise</a>
+            <!-- <a href="../career/career.html">Career</a> -->
+            <a href="../about/about.html">About</a>
+            <a href="../contact/contact.html">Contact Us</a>
+        </div>
+        
+        <span style="font-size:40px;cursor:pointer;margin-top: 10px;" onclick="openNav()">&#9776; </span>
+    </nav>
+
+    <div class="landing-page">
+        <h1 class="heading">CONTACT US</h1>
+    </div>
+
+    <div class="contact-form">
+        <div class="form-container">
+            <form action="/action_page.php" class="form"> 
+              <label for="fname" >First Name</label>
+              <input type="text" id="fname" name="firstname">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname">
+
+              <label for="Email">Email Address</label>
+              <input type="email" id="email" name="email">
+
+              <label for="Contact">Contact Number</label>
+              <input type="contact" id="contact-number" name="contact-number">
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" style="height:200px"></textarea>
+          
+              <button type="submit" value="Submit" class="btn">SEND</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="col1 col">
+                <a href="../about/about.html" class="link">ABOUT</a>
+                <a href="contact.html" class="link">CONTACT</a>
+                <a href="/faq" class="link">FAQ</a>
+            </div>
+            <div class="col2 col">
+                <h4 class="link">UK</h4>
+                <p class="line">uk@turningideas.com</p>
+
+                <h4 class="link">INDIA</h4>
+                <p>info@turningideas.com</p>
+                <p>+91 9899536692</p>
+            </div>
+            <div class="col3 col">
+                <h4>Want a growth consultation session to scale your startup or business.</h4>
+                <a href="/contact" class="link book-now">BOOK NOW!</a>
+                <p>© Turning Ideas Ventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
